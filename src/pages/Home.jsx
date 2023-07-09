@@ -16,7 +16,7 @@ export default function Home() {
       <div className="w-full h-full flex flex-col">
         <div className="bg-stone-200/40 shadow-md	shadow-stone-800/40 flex">
           <div className="basis-1/1">
-            <div className="ms-1.5 px-1">
+            <div className="ms-3 px-1">
               <img className="w-6 cursor-pointer" src={osLogo} alt="Os Logo" />
             </div>
           </div>
@@ -25,9 +25,9 @@ export default function Home() {
               
             </div>
           </div>
-          <div className="grow flex justify-end gap-0.5 py-0.5 pe-2 text-sm font-mono font-semibold">            
+          <div className="grow flex justify-end gap-0.5 py-0.5 pe-3 text-sm font-mono font-semibold">            
             <div className="px-1.5 hover:rounded-lg hover:bg-stone-300/50 cursor-pointer">
-              <span className="align-middle">16:10</span>
+              <span className="align-middle">Mon 16:10</span>
             </div>
           </div>
         </div>
