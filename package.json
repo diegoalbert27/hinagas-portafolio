@@ -5,6 +5,7 @@
   "homepage": "https://diegoalbert27.github.io/hinagas-portafolio",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
