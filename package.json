@@ -2,14 +2,17 @@
   "name": "hinagas-portafolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://diegoalbert27.github.io/hinagas-portafolio",
   "type": "module",
   "scripts": {
+    "deploy": "npm run build && gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

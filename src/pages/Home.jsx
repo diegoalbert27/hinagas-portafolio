@@ -17,7 +17,7 @@ export default function Home() {
         <div className="bg-stone-200/40 shadow-md	shadow-stone-800/40 flex">
           <div className="basis-1/1">
             <div className="ms-3 px-1">
-              <img className="w-6 cursor-pointer" src={osLogo} alt="Os Logo" />
+              <img className="w-6" src={osLogo} alt="Os Logo" />
             </div>
           </div>
           <div className="grow">
