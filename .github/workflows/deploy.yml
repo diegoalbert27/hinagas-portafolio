@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://github.com
+      url: https://diegoalbert27.github.io/hinagas-portafolio
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
