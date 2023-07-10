@@ -5,11 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: '/'
   }
 
   if (command === 'serve') {
-    config.base = '/hinagas-portafolio/'
+    config.base = ' https://diegoalbert27.github.io/hinagas-portafolio/'
   }
 
   return config
