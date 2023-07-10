@@ -8,7 +8,7 @@ export default defineConfig(({ command }) => {
   }
 
   if (command === 'serve') {
-    config.base = ' https://diegoalbert27.github.io/hinagas-portafolio/'
+    config.base = 'https://diegoalbert27.github.io/hinagas-portafolio/'
   }
 
   return config
