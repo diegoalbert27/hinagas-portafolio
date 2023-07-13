@@ -1,7 +1,7 @@
 import background from "./assets/images/background.webp"
 import avatar from "./assets/images/avatar.webp"
 
-import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoPhp, BiLogoGit } from "react-icons/bi";
+import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoPhp, BiLogoGit, BiSolidDownload } from "react-icons/bi";
 
 export default function App() {
   return (
@@ -46,8 +46,8 @@ export default function App() {
         </div>
       </div>
 
-      <div className="h-screen bg-slate-900 text-stone-100">
-        <div className="grid grid-cols-2 gap-4 content-start px-28 pt-32">
+      <div className="h-screen bg-gradient-to-b from-slate-900 from-70% to-stone-950 text-stone-100">
+        <div className="grid grid-cols-2 gap-4 content-start px-28 pt-24">
           <div className="p-4">
             <h2 className="font-sans text-4xl font-extrabold">Sobre mi</h2>
             
@@ -56,12 +56,17 @@ export default function App() {
             <p className="mt-3 font-sans">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis culpa praesentium illo tenetur voluptas temporibus eveniet laboriosam id qui voluptate. Quibusdam rerum nam dolore tempore, quidem quae perspiciatis ullam nobis!</p>
 
             <p className="mt-3 font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni obcaecati ipsum architecto similique id illo voluptatibus rem consequatur nesciunt eos optio commodi, accusamus blanditiis cum?</p>
+
+            <button className="mx-auto mt-1 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-3 rounded-lg flex gap-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+              <span className="font-extrabold">Descargar CV </span>
+              <BiSolidDownload className="text-2xl" />
+            </button>
           </div>
           <div className="p-4">
             <h2 className="font-sans text-4xl font-extrabold">Mis estudios</h2>
             
             <div className="mt-3">
-              <div className="bg-sky-800 transition ease-in-out delay-185 hover:bg-slate-700 hover:p-5 duration-150 rounded-lg p-3 shadow-lg">
+              <div className="bg-sky-800 transition ease-in delay-150 hover:bg-slate-700 duration-300 rounded-lg p-5 shadow-lg">
                 <h3 className="text-1xl font-extrabold font-sans">Tsu en Informartica</h3>
                 <a className="text-stone-300 hover:text-blue-100 text-sm font-sans" href="http://upta.edu.ve/" target="_blanck">
                   Universidad Politecnica Territorial del Estado Aragua
@@ -71,7 +76,7 @@ export default function App() {
                 </div>
               </div>
               
-              <div className="bg-sky-800 transition ease-in-out delay-185 hover:bg-slate-700 hover:p-5 duration-150 rounded-lg p-3 shadow-lg mt-4">
+              <div className="bg-sky-800 transition ease-in-out delay-150 hover:bg-slate-700 duration-700 rounded-lg p-5 shadow-lg mt-4">
                   <h3 className="text-1xl font-extrabold font-sans">Bootcamp Fullstack Certifate</h3>
                   <a className="text-stone-300 hover:text-blue-100 text-sm font-sans" href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/d987a7a3d60e4bbb5903af5da20cff04" target="_blanck">
                     Fullstack Open 2022
@@ -110,6 +115,10 @@ export default function App() {
 
           </div>
         </div>
+      </div>
+
+      <div className="h-screen bg-stone-950 text-stone-100">
+        
       </div>
     </>
   )
