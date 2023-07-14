@@ -1,7 +1,11 @@
 import background from "./assets/images/background.webp"
 import avatar from "./assets/images/avatar.webp"
 
-import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoPhp, BiLogoGit, BiSolidDownload } from "react-icons/bi";
+import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoPhp, BiLogoGit, BiSolidDownload, BiLogoLinkedinSquare, BiLogoGithub, BiLogoGmail } from "react-icons/bi";
+
+import card1 from "./assets/images/cards/1.jpg"
+import card2 from "./assets/images/cards/2.jpg"
+import card3 from "./assets/images/cards/3.jpg"
 
 export default function App() {
   return (
@@ -9,11 +13,11 @@ export default function App() {
       <nav className="fixed top-0 z-10 bg-blue-950/30 backdrop-filter backdrop-blur-lg w-full">
         <div className="max-w-5xl mx-auto px-1.5">
           <div className="flex items-center justify-between h-16">
-            <span className="text-2xl text-stone-100 font-sans font-semibold">Logo</span>
+            <a className="text-2xl text-stone-100 font-sans font-semibold" href="#">Diego Hinagas</a>
             <div className="flex space-x-8 text-stone-100 font-sans font-semibold">
               <a href="#">Sobre mi</a>
               <a href="#">Proyectos</a>
-              <a href="#">Contacto</a>
+              <a href="#">Contactame</a>
             </div>
           </div>
         </div>
@@ -34,7 +38,7 @@ export default function App() {
             </div>
 
             <h1 className="font-sans text-5xl font-extrabold">
-              Hola, Soy Diego
+              Hey, Soy Diego ;)
             </h1>
             <div className="w-96 mx-auto">
               <p className="mt-4 font-sans">
@@ -112,13 +116,99 @@ export default function App() {
                   </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
-      <div className="h-screen bg-stone-950 text-stone-100">
+      <div className="h-screen bg-stone-950 text-stone-100 pt-20">
+        <div className="h-full">
+          <h2 className="text-center font-sans text-4xl font-extrabold">Proyectos</h2>
+          
+          <div className="flex justify-center gap-4 p-2 mt-5">
+            <div className="bg-stone-900 text-stone-100 rounded-md w-56 shadow-lg">
+              <div className="p-3">
+                <img className="w-full h-28 rounded-md shadow-md" src={card1} alt="" />
+                <h3 className="text-md font-sans font-semibold mt-2">Lorem ipsum dolor sit amet.</h3>
+                <p className="text-sm mt-2 font-sans text-stone-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est!</p>
+
+                <div className="flex flex-wrap gap-1 mt-2">
+                  <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                    <p className="text-xs font-sans">CSS</p>
+                  </div>
+                  <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                    <p className="text-xs font-sans">Web</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-stone-900 text-stone-100 rounded-md w-56 shadow-lg">
+              <div className="p-3">
+                <img className="w-full h-28 rounded-md shadow-md" src={card2} alt="" />
+                <h3 className="text-md font-sans font-semibold mt-2">Lorem ipsum dolor sit amet.</h3>
+                <p className="text-sm mt-2 font-sans text-stone-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est!</p>
+                <div className="flex flex-wrap gap-1 mt-2">
+                  <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                    <p className="text-xs font-sans">HTML</p>
+                  </div>
+                  <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                    <p className="text-xs font-sans">Javascript</p>
+                  </div>
+                  <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                    <p className="text-xs font-sans">Web</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-stone-900 text-stone-100 rounded-md w-56 shadow-lg">
+              <div className="p-3">
+                <img className="w-full h-28 rounded-md shadow-md" src={card3} alt="" />
+                
+                <h3 className="text-md font-sans font-semibold mt-2">Lorem ipsum dolor sit amet.</h3>
+                <p className="text-sm mt-2 font-sans text-stone-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, est!</p>
+
+                <div className="flex flex-wrap gap-1 mt-2">
+                  <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                    <p className="text-xs font-sans">HTML</p>
+                  </div>
+                  <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                    <p className="text-xs font-sans">CSS</p>
+                  </div>
+                  <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                    <p className="text-xs font-sans">Javascript</p>
+                  </div>
+                  <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                    <p className="text-xs font-sans">Web</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-screen bg-stone-950 text-stone-100 pt-28">
+        <div className="h-full">
+          <h2 className="text-center font-sans text-4xl font-extrabold">Contactame</h2>
+          <div className="mt-4">
+            <div className="bg-stone-900 p-4 rounded-md shadow-lg">
+              <BiLogoLinkedinSquare className="mx-auto text-4xl" />
+              <h3 className="font-light italic">@DiegoHinagas</h3>
+            </div>
+            
+            <div className="bg-stone-900 p-4 rounded-md shadow-lg">
+              <BiLogoGithub className="mx-auto text-4xl" />
+              <h3 className="font-light italic">@DiegoHinagas</h3>
+            </div>
+            
+            <div className="bg-stone-900 p-4 rounded-md shadow-lg">
+              <BiLogoGmail className="mx-auto text-4xl" />
+              <h3 className="font-light italic">@DiegoHinagas</h3>
+            </div>
+          </div>
         
+        </div>
       </div>
     </>
   )
