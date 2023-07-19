@@ -12,6 +12,10 @@ export default function App() {
       <Header />
       <About />
       <Portfolio />
+
+      <footer className="text-center bg-stone-950 text-stone-100 p-3 font-semibold italic">
+        Hecho con mucho amor &#128147;, deveras! - 2023
+      </footer>
     </>
   )
 }

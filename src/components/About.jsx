@@ -2,9 +2,9 @@ import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoPhp, BiLogoGit, BiSoli
 
 export function About() {
   return (
-    <div className="h-screen bg-gradient-to-b from-slate-900 from-70% to-stone-950 text-stone-100" id="about">
-      <div className="grid grid-cols-2 gap-4 content-start px-28 pt-24">
-        <div className="p-4">
+    <div className="bg-gradient-to-b from-slate-900 from-70% to-stone-950 text-stone-100" id="about">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-4 content-start px-8 md:px-10 lg:px-28 pt-12 md:pt-18">
+        <div className="md:p-4">
           <h2 className="font-sans text-4xl font-extrabold">Sobre mi</h2>
 
           <p className="mt-3 font-sans">
@@ -26,15 +26,15 @@ export function About() {
             consequatur nesciunt eos optio commodi, accusamus blanditiis cum?
           </p>
 
-          <button className="mx-auto mt-1 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-3 rounded-lg flex gap-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-            <span className="font-extrabold">Descargar CV </span>
+          <button className="mx-auto mt-8 md:mt-6 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-3 rounded-lg flex gap-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+            <span className="font-extrabold">Descargar CV</span>
             <BiSolidDownload className="text-2xl" />
           </button>
         </div>
-        <div className="p-4">
+        <div className="mt-6 md:mt-0 md:p-4">
           <h2 className="font-sans text-4xl font-extrabold">Mis estudios</h2>
 
-          <div className="mt-3">
+          <div className="mt-6 md:mt-4">
             <div className="bg-sky-800 transition ease-in delay-150 hover:bg-slate-700 duration-300 rounded-lg p-5 shadow-lg">
               <h3 className="text-1xl font-extrabold font-sans">
                 Tsu en Informartica
@@ -67,9 +67,9 @@ export function About() {
               </div>
             </div>
 
-            <div className="p-3 mt-4">
-              <h4 className="text-sm font-extrabold font-sans">Habilidades</h4>
-              <div className="flex justify-around mt-3 p-4">
+            <div className="md:p-3 mt-8 md:mt-4">
+              <h4 className="text-center md:text-start text-lg md:text-sm font-extrabold font-sans">Habilidades</h4>
+              <div className="flex justify-around mt-3 lg:p-4">
                 <div className="text-center">
                   <BiLogoHtml5 className="hover:text-orange-500 cursor-pointer shadow-sm text-5xl" />
                   <p className="text-sm">HTML</p>
@@ -83,12 +83,12 @@ export function About() {
                   <p className="text-sm">Javascript</p>
                 </div>
                 <div className="text-center">
-                  <BiLogoPhp className="hover:text-blue-400 cursor-pointer shadow-sm text-5xl" />
-                  <p className="text-sm">PHP</p>
-                </div>
-                <div className="text-center">
                   <BiLogoGit className="hover:text-red-600 cursor-pointer shadow-sm text-5xl" />
                   <p className="text-sm">Git</p>
+                </div>
+                <div className="text-center">
+                  <BiLogoPhp className="hover:text-blue-400 cursor-pointer shadow-sm text-5xl" />
+                  <p className="text-sm">PHP</p>
                 </div>
               </div>
             </div>
