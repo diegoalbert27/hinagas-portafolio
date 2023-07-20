@@ -24,18 +24,17 @@ export function Header() {
           </h1>
           <div className="w-64 md:w-96 mx-auto">
             <p className="mt-3 md:mt-4 font-sans font-semibold text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus quas eos voluptatum
+              Desarrollador web. Me gusta escuchar música, aprender del mundo de la tecnología y colaborar en proyectos e ideas creativas
             </p>
           </div>
           <div className="mt-3 md:mt-4 flex justify-center gap-4">
-            <a>
+            <a href="https://www.linkedin.com/in/diego-hinagas/" target="_blanck">
               <BiLogoLinkedinSquare className="text-4xl" />
             </a>
-            <a>
+            <a href="https://github.com/diegoalbert27" target="_blanck">
               <BiLogoGithub className="text-4xl" />
             </a>
-            <a>
+            <a href="mailto: hinagasrodriguez@gmail.com">
               <BiLogoGmail className="text-4xl" />
             </a>
           </div>

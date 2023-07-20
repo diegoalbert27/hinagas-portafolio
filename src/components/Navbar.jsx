@@ -1,6 +1,6 @@
 export function Navbar() {
   return (
-    <nav className="fixed top-0 z-10 bg-blue-950/30 backdrop-filter backdrop-blur-lg w-full hidden md:block">
+    <nav className="fixed md:top-0 z-10 bg-blue-950/30 backdrop-filter backdrop-blur-lg w-full mx-4 md:mx-0">
       <div className="md:max-w-lg lg:max-w-6xl mx-auto">
         <div className="flex items-center justify-between h-16">
           <a

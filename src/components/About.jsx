@@ -8,22 +8,15 @@ export function About() {
           <h2 className="font-sans text-4xl font-extrabold">Sobre mi</h2>
 
           <p className="mt-3 font-sans">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse qui
-            quis a rerum cumque necessitatibus itaque ducimus eos. Ea temporibus
-            qui incidunt odio nobis architecto quae maiores dolorem harum id!
+            Mi nombre es Diego y me encanta la música y la programación. Me apasiona enfrentar retos y ser parte de proyectos innovadores que me permitan aprender y crecer como profesional. Siempre estoy dispuesto a ayudar en todo lo que pueda y aportar mi granito de arena para lograr resultados brillantes.
           </p>
 
           <p className="mt-3 font-sans">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-            culpa praesentium illo tenetur voluptas temporibus eveniet
-            laboriosam id qui voluptate. Quibusdam rerum nam dolore tempore,
-            quidem quae perspiciatis ullam nobis!
+            Desde un tiempo para acá he estado desarrollando distintos proyectos para todo tipo de clientes como desarrollador web, ya sean páginas, aplicaciones o apis con distintas herramientas que se usan actualmente
           </p>
 
           <p className="mt-3 font-sans">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            obcaecati ipsum architecto similique id illo voluptatibus rem
-            consequatur nesciunt eos optio commodi, accusamus blanditiis cum?
+            Siempre me encuentro en busca de retos y conocer personas talentosas para aprender de ellas. Actualmente, tengo dos años de experiencia como desarrollador web, he trabajado con distintos lenguajes de programación como PHP, Python, JavaScript, CSS y HTML
           </p>
 
           <button className="mx-auto mt-8 md:mt-6 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-3 rounded-lg flex gap-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
@@ -37,14 +30,14 @@ export function About() {
           <div className="mt-6 md:mt-4">
             <div className="bg-sky-800 transition ease-in delay-150 hover:bg-slate-700 duration-300 rounded-lg p-5 shadow-lg">
               <h3 className="text-1xl font-extrabold font-sans">
-                Tsu en Informartica
+                Tsu en Informática
               </h3>
               <a
                 className="text-stone-300 hover:text-blue-100 text-sm font-sans"
                 href="http://upta.edu.ve/"
                 target="_blanck"
               >
-                Universidad Politecnica Territorial del Estado Aragua
+                Universidad Politécnica Territorial del Estado Aragua
               </a>
               <div className="text-stone-300 text-sm font-light font-sans italic">
                 <time>Octubre, 2018</time> - <time>Diciembre, 2021</time>
@@ -53,7 +46,7 @@ export function About() {
 
             <div className="bg-sky-800 transition ease-in-out delay-150 hover:bg-slate-700 duration-700 rounded-lg p-5 shadow-lg mt-4">
               <h3 className="text-1xl font-extrabold font-sans">
-                Bootcamp Fullstack Certifate
+                Bootcamp Fullstack Certificate
               </h3>
               <a
                 className="text-stone-300 hover:text-blue-100 text-sm font-sans"
