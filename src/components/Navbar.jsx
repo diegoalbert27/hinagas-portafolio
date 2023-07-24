@@ -1,10 +1,10 @@
 export function Navbar() {
   return (
-    <nav className="fixed md:top-0 z-10 bg-blue-950/30 backdrop-filter backdrop-blur-lg w-full mx-4 md:mx-0">
+    <nav className="fixed bottom-0 md:top-0 md:bottom-auto z-10 bg-blue-950/30 backdrop-filter backdrop-blur-lg w-full">
       <div className="md:max-w-lg lg:max-w-6xl mx-auto">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-center md:justify-between h-16">
           <a
-            className="text-2xl text-stone-100 font-sans font-bold italic"
+            className="text-2xl text-stone-100 font-sans font-bold italic hidden md:block"
             href="#"
           >
             Diego Hinagas

@@ -20,7 +20,7 @@ export function Header() {
           </div>
 
           <h1 className="font-sans text-4xl md:text-5xl font-extrabold">
-            Hey, soy Diego ;)
+            Hola, soy Diego ;)
           </h1>
           <div className="w-64 md:w-96 mx-auto">
             <p className="mt-3 md:mt-4 font-sans font-semibold text-lg">
