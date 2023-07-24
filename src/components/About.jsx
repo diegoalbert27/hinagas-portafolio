@@ -62,7 +62,7 @@ export function About() {
 
             <div className="md:p-3 mt-8 md:mt-4">
               <h4 className="text-center md:text-start text-lg md:text-sm font-extrabold font-sans">Habilidades</h4>
-              <div className="flex justify-around mt-3 lg:p-4">
+              <div className="flex overflow-x-auto space-x-8 w-full mt-3 p-1 lg:p-4">
                 <div className="text-center">
                   <BiLogoHtml5 className="hover:text-orange-500 cursor-pointer shadow-sm text-5xl" />
                   <p className="text-sm">HTML</p>
