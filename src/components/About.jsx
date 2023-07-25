@@ -1,11 +1,11 @@
 import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoPhp, BiLogoGit, BiSolidDownload } from "react-icons/bi";
-import { Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export function About() {
   return (
     <div className="bg-gradient-to-b from-slate-900 from-70% to-stone-950 text-stone-100" id="about">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-4 content-start px-8 md:px-10 lg:px-28 pt-12 md:pt-18">
-        <Zoom>
+        <Fade>
           <div className="md:p-4">
             <h2 className="font-sans text-4xl font-extrabold">Sobre mi</h2>
   
@@ -89,7 +89,7 @@ export function About() {
               </div>
             </div>
           </div>
-        </Zoom>
+        </Fade>
       </div>
     </div>
   )
