@@ -1,4 +1,5 @@
 import { Slide } from "react-awesome-reveal";
+import { Link } from "react-scroll";
 
 export function Navbar() {
   return (
@@ -15,8 +16,8 @@ export function Navbar() {
           </Slide>
           <Slide direction="right">
             <div className="flex space-x-4 text-stone-100 font-sans font-semibold">
-              <a href="#about">Sobre mi</a>
-              <a href="#portfolio">Proyectos</a>
+              <Link className="cursor-pointer" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={1000}>Sobre mi</Link>
+              <Link className="cursor-pointer" activeClass="active" to="portfolio" spy={true} smooth={true} offset={50} duration={1000}>Proyectos</Link>
             </div>
           </Slide>
         </div>
