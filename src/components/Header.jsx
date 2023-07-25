@@ -32,6 +32,7 @@ export function Header() {
                         .pauseFor(1000)
                         .deleteAll()
                         .typeString('Soy Desarrollador Web')
+                        .pauseFor(1000)
                         .start()
                 }}
               />
