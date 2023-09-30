@@ -21,10 +21,10 @@ export function About() {
               Siempre me encuentro en busca de retos y conocer personas talentosas para aprender de ellas. Actualmente, tengo dos años de experiencia como desarrollador web, he trabajado con distintos lenguajes de programación como PHP, Python, JavaScript, CSS y HTML
             </p>
   
-            <button className="mx-auto mt-8 md:mt-6 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-3 rounded-lg flex gap-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+            {/* <button className="mx-auto mt-8 md:mt-6 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-3 rounded-lg flex gap-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
               <span className="font-extrabold">Descargar CV</span>
               <BiSolidDownload className="text-2xl" />
-            </button>
+            </button> */}
           </div>
           <div className="mt-6 md:mt-0 md:p-4">
             <h2 className="font-sans text-4xl font-extrabold">Mis estudios</h2>

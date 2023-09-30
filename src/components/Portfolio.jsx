@@ -1,6 +1,6 @@
-import card1 from "../assets/images/cards/1.jpg"
+import bpc from "../assets/images/cards/bpc.png"
 import card2 from "../assets/images/cards/2.jpg"
-import card3 from "../assets/images/cards/3.jpg"
+// import card3 from "../assets/images/cards/3.jpg"
 
 export function Portfolio() {
   return (
@@ -12,17 +12,18 @@ export function Portfolio() {
       <div className="flex flex-col md:flex-row md:justify-center gap-4 p-8 md:p-2 md:mt-5">
         <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
           <div className="p-3">
-            <img
-              className="w-full h-28 rounded-md shadow-md"
-              src={card1}
-              alt=""
-            />
+            <a href="https://github.com/diegoalbert27/bpc_v2Vani" target="_blank" rel="noreferrer">
+              <img
+                className="w-full h-28 rounded-md shadow-md"
+                src={bpc}
+                alt="BPC proyecto"
+              />
+            </a>
             <h3 className="text-md font-sans font-semibold mt-2">
-              Lorem ipsum dolor sit amet.
+              Biblioteca Publica Agustín Codazzi
             </h3>
             <p className="text-sm mt-2 font-sans text-stone-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              est!
+              Sitio web para la gestión de procesos administrativo de la biblioteca
             </p>
 
             <div className="flex flex-wrap gap-1 mt-2">
@@ -30,7 +31,22 @@ export function Portfolio() {
                 <p className="text-xs font-sans">CSS</p>
               </div>
               <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">PHP</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">HTML</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">Javascript</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">MySQL</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
                 <p className="text-xs font-sans">Web</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">CMS</p>
               </div>
             </div>
           </div>
@@ -64,7 +80,7 @@ export function Portfolio() {
           </div>
         </div>
 
-        <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
+        {/* <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
           <div className="p-3">
             <img
               className="w-full h-28 rounded-md shadow-md"
@@ -95,7 +111,7 @@ export function Portfolio() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
