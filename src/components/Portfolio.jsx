@@ -1,5 +1,5 @@
 import bpc from "../assets/images/cards/bpc.png"
-import card2 from "../assets/images/cards/2.jpg"
+// import card2 from "../assets/images/cards/2.jpg"
 // import card3 from "../assets/images/cards/3.jpg"
 
 export function Portfolio() {
@@ -52,7 +52,7 @@ export function Portfolio() {
           </div>
         </div>
 
-        <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
+        {/* <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
           <div className="p-3">
             <img
               className="w-full h-28 rounded-md shadow-md"
@@ -78,7 +78,7 @@ export function Portfolio() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
           <div className="p-3">
