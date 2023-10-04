@@ -52,15 +52,17 @@ export function Portfolio() {
           </div>
         </div>
 
-        {/* <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
+        <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
           <div className="p-3">
-            <img
-              className="w-full h-28 rounded-md shadow-md"
-              src={card2}
-              alt=""
-            />
+            <a href="https://github.com/diegoalbert27/simple-online-store" target="_blank" rel="noreferrer">
+              <img
+                className="w-full h-28 rounded-md shadow-md"
+                src="https://user-images.githubusercontent.com/48531350/272437822-fbe5fbe9-3d7a-4a45-b882-dc0e596e04a0.png"
+                alt=""
+              />
+            </a>
             <h3 className="text-md font-sans font-semibold mt-2">
-              Lorem ipsum dolor sit amet.
+              E-commerce para la venta de productos en linea
             </h3>
             <p className="text-sm mt-2 font-sans text-stone-400">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
@@ -74,11 +76,26 @@ export function Portfolio() {
                 <p className="text-xs font-sans">Javascript</p>
               </div>
               <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
-                <p className="text-xs font-sans">Web</p>
+                <p className="text-xs font-sans">CSS</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">PHP</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">Laravel</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">React</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">MySQL</p>
+              </div>
+              <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
+                <p className="text-xs font-sans">E-commerce</p>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
           <div className="p-3">
