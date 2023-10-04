@@ -62,11 +62,10 @@ export function Portfolio() {
               />
             </a>
             <h3 className="text-md font-sans font-semibold mt-2">
-              E-commerce para la venta de productos en linea
+              Simple Online Store
             </h3>
             <p className="text-sm mt-2 font-sans text-stone-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              est!
+              E-commerce para la venta de productos en linea.
             </p>
             <div className="flex flex-wrap gap-1 mt-2">
               <div className="bg-stone-100 text-stone-950 rounded-full px-2 py-1">
