@@ -10,7 +10,7 @@ export function Portfolio() {
       <div className="flex flex-col md:flex-row md:justify-center gap-4 p-8 md:p-2 md:mt-5">
         <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
           <div className="p-3">
-            <a href="http://bpcaragua.com/" target="_blank" rel="noreferrer">
+            <a href="https://github.com/diegoalbert27/bpc_v2Vani" target="_blank" rel="noreferrer">
               <img
                 className="w-full h-28 rounded-md shadow-md"
                 src={bpc}
