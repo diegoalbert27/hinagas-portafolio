@@ -10,7 +10,7 @@ export function Portfolio() {
       <div className="flex flex-col md:flex-row md:justify-center gap-4 p-8 md:p-2 md:mt-5">
         <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
           <div className="p-3">
-            <a href="https://github.com/diegoalbert27/bpc_v2Vani" target="_blank" rel="noreferrer">
+            <a href="https://bpc.diegohinagas.com/" target="_blank" rel="noreferrer">
               <img
                 className="w-full h-28 rounded-md shadow-md"
                 src={bpc}
@@ -52,7 +52,7 @@ export function Portfolio() {
 
         <div className="bg-stone-900 text-stone-100 rounded-md md:w-56 shadow-lg">
           <div className="p-3">
-            <a href="https://simple-online-store-production.up.railway.app" target="_blank" rel="noreferrer">
+            <a href="https://simpleonlinestore.diegohinagas.com" target="_blank" rel="noreferrer">
               <img
                 className="w-full h-28 rounded-md shadow-md"
                 src="https://user-images.githubusercontent.com/48531350/272437822-fbe5fbe9-3d7a-4a45-b882-dc0e596e04a0.png"
