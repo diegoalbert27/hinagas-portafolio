@@ -56,50 +56,50 @@ const experiences = [
 
 export function Experience() {
   return (
-    <div className="bg-neutral-950 text-stone-100 py-20 px-6 md:px-10 lg:px-28" id="experience">
+    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-8 px-6 md:px-10 lg:px-28" id="experience">
       <Fade triggerOnce>
-        <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-white/90">
+        <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
           💼 Experiencia
         </h2>
-        <p className="text-center text-white/40 font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
+        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
           Más de 4 años construyendo productos fintech en web y mobile
         </p>
       </Fade>
 
       <div className="relative max-w-3xl mx-auto">
-        <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-white/[0.06]" />
+        <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-[var(--c-timeline-line)]" />
 
         {experiences.map((exp, i) => (
           <Fade key={i} triggerOnce direction="up" delay={i * 200} className="pb-16 last:pb-0">
             <div className="relative pl-12 md:pl-16">
-              <div className="absolute left-[13px] md:left-[21px] top-2 w-1.5 h-1.5 rounded-full bg-white/30 ring-4 ring-neutral-950" />
+              <div className="absolute left-[13px] md:left-[21px] top-2 w-1.5 h-1.5 rounded-full bg-[var(--c-timeline-dot)] ring-4 ring-[var(--c-timeline-ring)]" />
 
-              <div className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl p-6 md:p-8">
-                <span className="inline-block text-xs text-white/20 tracking-widest uppercase mb-3">
+              <div className="bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-6 md:p-8">
+                <span className="inline-block text-xs text-[var(--c-text-20)] tracking-widest uppercase mb-3">
                   {exp.period}
                 </span>
 
-                <h3 className="text-xl font-semibold text-white/90 font-sans">
+                <h3 className="text-xl font-semibold text-[var(--c-text-h)] font-sans">
                   {exp.role}
                 </h3>
-                <p className="text-white/50 font-medium text-sm mt-0.5">
+                <p className="text-[var(--c-text-60)] font-medium text-sm mt-0.5">
                   <a
                     href={exp.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-white/80 transition-colors"
+                    className="hover:text-[var(--c-text-80)] transition-colors"
                   >
                     {exp.company}
                   </a>
                 </p>
-                <p className="text-white/30 text-xs mt-2 leading-relaxed">
+                <p className="text-[var(--c-text-40)] text-xs mt-2 leading-relaxed">
                   {exp.description}
                 </p>
 
                 <ul className="mt-5 space-y-2.5">
                   {exp.bullets.map((b, j) => (
-                    <li key={j} className="flex gap-3 text-sm text-white/60 leading-relaxed">
-                      <span className="text-white/20 mt-1 shrink-0 select-none">—</span>
+                    <li key={j} className="flex gap-3 text-sm text-[var(--c-text-60)] leading-relaxed">
+                      <span className="text-[var(--c-text-20)] mt-1 shrink-0 select-none">—</span>
                       <span>{b}</span>
                     </li>
                   ))}
@@ -109,7 +109,7 @@ export function Experience() {
                   {exp.tech.map((t) => (
                     <span
                       key={t}
-                      className="text-xs text-white/40 bg-white/[0.04] border border-white/[0.06] px-2.5 py-0.5 rounded-full"
+                      className="text-xs text-[var(--c-text-40)] bg-[var(--c-bg-card)] border border-[var(--c-border)] px-2.5 py-0.5 rounded-full"
                     >
                       {t}
                     </span>

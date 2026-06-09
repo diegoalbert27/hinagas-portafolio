@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Slide } from "react-awesome-reveal";
 import { Link } from "react-scroll";
-import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { HiMenuAlt3, HiX, HiSun, HiMoon } from "react-icons/hi";
 import { BiLogoLinkedinSquare, BiLogoGithub, BiLogoGmail } from "react-icons/bi";
+import { useTheme } from "../hooks/useTheme";
 
 const links = [
   { to: "about", label: "Sobre mi" },
@@ -12,6 +13,7 @@ const links = [
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     if (open) {
@@ -28,12 +30,12 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 z-30 bg-neutral-950/60 backdrop-blur-2xl border-b border-white/[0.06] w-full">
+      <nav className="fixed top-0 z-30 bg-[var(--c-bg-nav)] backdrop-blur-2xl border-b border-[var(--c-border)] w-full">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <Slide>
               <a
-                className="text-lg text-white/90 font-sans font-medium tracking-tight hover:text-white transition-colors"
+                className="text-lg text-[var(--c-text-h)] font-sans font-medium tracking-tight hover:text-[var(--c-text-h)] transition-colors"
                 href="#"
               >
                 Diego Hinagas
@@ -42,12 +44,12 @@ export function Navbar() {
 
             <Slide direction="right">
               <div className="hidden md:flex items-center gap-1">
-                <div className="flex space-x-1 text-white/60 font-sans font-medium text-sm mr-4">
+                <div className="flex space-x-1 text-[var(--c-text-60)] font-sans font-medium text-sm mr-4">
                   {links.map((l) => (
                     <Link
                       key={l.to}
-                      className="cursor-pointer hover:text-white/90 transition-colors px-3 py-2 rounded-lg hover:bg-white/[0.04]"
-                      activeClass="text-white"
+                      className="cursor-pointer hover:text-[var(--c-text-h)] transition-colors px-3 py-2 rounded-lg hover:bg-[var(--c-bg-card)]"
+                      activeClass="text-[var(--c-text-h)]"
                       to={l.to}
                       spy={true}
                       smooth={true}
@@ -58,9 +60,20 @@ export function Navbar() {
                     </Link>
                   ))}
                 </div>
+                <button
+                  onClick={toggleTheme}
+                  className="text-[var(--c-text-40)] hover:text-[var(--c-text-h)] transition-colors p-1 mr-2"
+                  aria-label="Cambiar tema"
+                >
+                  {theme === "dark" ? (
+                    <HiSun className="text-xl" />
+                  ) : (
+                    <HiMoon className="text-xl" />
+                  )}
+                </button>
                 <a
                   href="mailto:hinagasrodriguez@gmail.com"
-                  className="text-xs font-medium font-sans bg-white/90 text-neutral-950 hover:bg-white px-4 py-2 rounded-full transition-colors"
+                  className="text-xs font-medium font-sans bg-[var(--c-bg-btn)] text-[var(--c-text-btn)] hover:bg-[var(--c-bg-btn-hover)] px-4 py-2 rounded-full transition-colors"
                 >
                   Contacto
                 </a>
@@ -68,7 +81,7 @@ export function Navbar() {
             </Slide>
 
             <button
-              className="md:hidden text-white/60 hover:text-white transition-colors p-1"
+              className="md:hidden text-[var(--c-text-60)] hover:text-[var(--c-text-h)] transition-colors p-1"
               onClick={() => setOpen(true)}
               aria-label="Abrir menú"
             >
@@ -79,23 +92,23 @@ export function Navbar() {
       </nav>
 
       <div
-        className={`fixed inset-0 z-40 bg-black/70 backdrop-blur-sm transition-opacity duration-500 md:hidden ${
+        className={`fixed inset-0 z-40 bg-[var(--c-bg-overlay)] backdrop-blur-sm transition-opacity duration-500 md:hidden ${
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         onClick={closeMenu}
       />
 
       <div
-        className={`fixed top-0 right-0 z-50 h-full w-72 bg-neutral-950/95 backdrop-blur-2xl border-l border-white/[0.06] transition-transform duration-500 ease-out md:hidden ${
+        className={`fixed top-0 right-0 z-50 h-full w-72 bg-[var(--c-bg-mobile)] backdrop-blur-2xl border-l border-[var(--c-border)] transition-transform duration-500 ease-out md:hidden ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between p-5 border-b border-white/[0.06]">
-          <span className="text-base font-medium text-white/90 font-sans">
+        <div className="flex items-center justify-between p-5 border-b border-[var(--c-border)]">
+          <span className="text-base font-medium text-[var(--c-text-h)] font-sans">
             Diego Hinagas
           </span>
           <button
-            className="text-white/40 hover:text-white transition-colors p-1"
+            className="text-[var(--c-text-40)] hover:text-[var(--c-text-h)] transition-colors p-1"
             onClick={closeMenu}
             aria-label="Cerrar menú"
           >
@@ -107,8 +120,8 @@ export function Navbar() {
           {links.map((l) => (
             <Link
               key={l.to}
-              className="cursor-pointer text-white/60 hover:text-white font-sans font-medium text-lg transition-colors px-4 py-3 rounded-xl hover:bg-white/[0.04]"
-              activeClass="text-white bg-white/[0.04]"
+              className="cursor-pointer text-[var(--c-text-60)] hover:text-[var(--c-text-h)] font-sans font-medium text-lg transition-colors px-4 py-3 rounded-xl hover:bg-[var(--c-bg-card)]"
+              activeClass="text-[var(--c-text-h)] bg-[var(--c-bg-card)]"
               to={l.to}
               spy={true}
               smooth={true}
@@ -123,20 +136,39 @@ export function Navbar() {
           <div className="pt-4">
             <a
               href="mailto:hinagasrodriguez@gmail.com"
-              className="block text-center text-sm font-medium font-sans bg-white/90 text-neutral-950 hover:bg-white px-4 py-3 rounded-full transition-colors"
+              className="block text-center text-sm font-medium font-sans bg-[var(--c-bg-btn)] text-[var(--c-text-btn)] hover:bg-[var(--c-bg-btn-hover)] px-4 py-3 rounded-full transition-colors"
               onClick={closeMenu}
             >
               Contacto
             </a>
           </div>
 
-          <div className="pt-8 mt-4 border-t border-white/[0.06]">
+          <div className="pt-4 flex justify-center">
+            <button
+              onClick={() => { toggleTheme(); closeMenu(); }}
+              className="flex items-center gap-2 text-[var(--c-text-40)] hover:text-[var(--c-text-h)] transition-colors px-4 py-2 rounded-xl hover:bg-[var(--c-bg-card)] text-sm"
+            >
+              {theme === "dark" ? (
+                <>
+                  <HiSun className="text-lg" />
+                  Modo claro
+                </>
+              ) : (
+                <>
+                  <HiMoon className="text-lg" />
+                  Modo oscuro
+                </>
+              )}
+            </button>
+          </div>
+
+          <div className="pt-4 mt-4 border-t border-[var(--c-border)]">
             <div className="flex justify-center gap-5">
               <a
                 href="https://www.linkedin.com/in/diego-hinagas/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white/30 hover:text-white/70 transition-colors"
+                className="text-[var(--c-text-40)] hover:text-[var(--c-text-70)] transition-colors"
               >
                 <BiLogoLinkedinSquare className="text-2xl" />
               </a>
@@ -144,13 +176,13 @@ export function Navbar() {
                 href="https://github.com/diegoalbert27"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white/30 hover:text-white/70 transition-colors"
+                className="text-[var(--c-text-40)] hover:text-[var(--c-text-70)] transition-colors"
               >
                 <BiLogoGithub className="text-2xl" />
               </a>
               <a
                 href="mailto:hinagasrodriguez@gmail.com"
-                className="text-white/30 hover:text-white/70 transition-colors"
+                className="text-[var(--c-text-40)] hover:text-[var(--c-text-70)] transition-colors"
               >
                 <BiLogoGmail className="text-2xl" />
               </a>

@@ -12,8 +12,8 @@ export default function App() {
       <Header />
       <About />
       <Experience />
-      <div className="relative py-8 bg-neutral-950">
-        <div className="absolute inset-x-0 top-1/2 h-px bg-gradient-to-r from-transparent via-white/[0.04] to-transparent" />
+      <div className="relative py-8 bg-[var(--c-bg)]">
+        <div className="absolute inset-x-0 top-1/2 h-px bg-gradient-to-r from-transparent via-[var(--c-divider)] to-transparent" />
       </div>
       <Skills />
       <Footer />

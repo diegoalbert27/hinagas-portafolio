@@ -5,12 +5,12 @@ import { HiLocationMarker } from "react-icons/hi";
 
 export function Header() {
   return (
-    <div className="relative h-screen bg-gradient-to-b from-neutral-950 to-neutral-900 overflow-hidden" id="hero">
-      <div className="mt-8 relative z-10 w-full h-full flex flex-col items-center justify-center text-stone-100 px-6">
+    <div className="relative h-screen bg-gradient-to-b from-[var(--c-gradient-from)] to-[var(--c-gradient-to)] overflow-hidden" id="hero">
+      <div className="mt-8 relative z-10 w-full h-full flex flex-col items-center justify-center text-[var(--c-text)] px-6">
         <Fade triggerOnce>
           <div className="flex justify-center mb-8">
             <img
-              className="w-32 md:w-36 rounded-full ring-1 ring-white/10"
+              className="w-32 md:w-36 rounded-full ring-1 ring-[var(--c-ring)]"
               src={avatar}
               alt="Diego Hinagas"
             />
@@ -20,15 +20,15 @@ export function Header() {
             Diego Hinagas
           </h1>
 
-          <h2 className="mt-4 font-sans text-lg md:text-xl text-white/50 font-light tracking-wide text-center">
+          <h2 className="mt-4 font-sans text-lg md:text-xl text-[var(--c-text-60)] font-light tracking-wide text-center">
             Full-Stack Backend Engineer · Fintech & Crypto
           </h2>
 
-          <p className="mt-6 font-sans text-white/40 text-base max-w-md text-center leading-relaxed">
+          <p className="mt-6 font-sans text-[var(--c-text-40)] text-base max-w-md text-center leading-relaxed">
             Construyo productos fintech, de pagos y crypto end-to-end, desde el backend hasta experiencias web y mobile.
           </p>
 
-          <div className="mt-4 flex items-center justify-center gap-1.5 text-white/30 text-sm">
+          <div className="mt-4 flex items-center justify-center gap-1.5 text-[var(--c-text-40)] text-sm">
             <HiLocationMarker />
             <span>Caracas, Venezuela</span>
           </div>
@@ -38,7 +38,7 @@ export function Header() {
               href="https://www.linkedin.com/in/diego-hinagas/"
               target="_blank"
               rel="noreferrer"
-              className="text-white/30 hover:text-white/80 transition-colors duration-500"
+              className="text-[var(--c-text-40)] hover:text-[var(--c-text-80)] transition-colors duration-500"
             >
               <BiLogoLinkedinSquare className="text-3xl" />
             </a>
@@ -46,13 +46,13 @@ export function Header() {
               href="https://github.com/diegoalbert27"
               target="_blank"
               rel="noreferrer"
-              className="text-white/30 hover:text-white/80 transition-colors duration-500"
+              className="text-[var(--c-text-40)] hover:text-[var(--c-text-80)] transition-colors duration-500"
             >
               <BiLogoGithub className="text-3xl" />
             </a>
             <a
               href="mailto:hinagasrodriguez@gmail.com"
-              className="text-white/30 hover:text-white/80 transition-colors duration-500"
+              className="text-[var(--c-text-40)] hover:text-[var(--c-text-80)] transition-colors duration-500"
             >
               <BiLogoGmail className="text-3xl" />
             </a>

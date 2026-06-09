@@ -2,19 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --c-bg: #ffffff;
+  --c-bg-alt: #f5f5f5;
+  --c-bg-card: #f5f5f5;
+  --c-bg-nav: rgba(255, 255, 255, 0.8);
+  --c-bg-mobile: rgba(255, 255, 255, 0.95);
+  --c-bg-overlay: rgba(23, 23, 23, 0.7);
+  --c-bg-btn: #171717;
+  --c-bg-btn-hover: #262626;
+
+  --c-text: #171717;
+  --c-text-h: #171717;
+  --c-text-80: #262626;
+  --c-text-70: #404040;
+  --c-text-60: #525252;
+  --c-text-40: #737373;
+  --c-text-20: #a3a3a3;
+  --c-text-btn: #ffffff;
+
+  --c-border: #e5e5e5;
+  --c-border-subtle: #e5e5e5;
+
+  --c-timeline-line: #e5e5e5;
+  --c-timeline-dot: #a3a3a3;
+  --c-timeline-ring: #ffffff;
+  --c-ring: #d4d4d4;
+  --c-gradient-from: #ffffff;
+  --c-gradient-to: #f5f5f5;
+  --c-divider: #e5e5e5;
+  --c-heart: #ef4444;
+
+  --c-scrollbar-track: #e5e5e5;
+  --c-scrollbar-thumb: #a3a3a3;
+  --c-scrollbar-thumb-hover: #737373;
+}
+
+:root.dark {
+  --c-bg: #0a0a0a;
+  --c-bg-alt: #171717;
+  --c-bg-card: rgba(255, 255, 255, 0.03);
+  --c-bg-nav: rgba(10, 10, 10, 0.6);
+  --c-bg-mobile: rgba(10, 10, 10, 0.95);
+  --c-bg-overlay: rgba(0, 0, 0, 0.7);
+  --c-bg-btn: rgba(255, 255, 255, 0.9);
+  --c-bg-btn-hover: #ffffff;
+
+  --c-text: #f5f5f4;
+  --c-text-h: rgba(255, 255, 255, 0.9);
+  --c-text-80: rgba(255, 255, 255, 0.8);
+  --c-text-70: rgba(255, 255, 255, 0.7);
+  --c-text-60: rgba(255, 255, 255, 0.6);
+  --c-text-40: rgba(255, 255, 255, 0.4);
+  --c-text-20: rgba(255, 255, 255, 0.2);
+  --c-text-btn: #0a0a0a;
+
+  --c-border: rgba(255, 255, 255, 0.06);
+  --c-border-subtle: rgba(255, 255, 255, 0.04);
+
+  --c-timeline-line: rgba(255, 255, 255, 0.06);
+  --c-timeline-dot: rgba(255, 255, 255, 0.3);
+  --c-timeline-ring: #0a0a0a;
+  --c-ring: rgba(255, 255, 255, 0.1);
+  --c-gradient-from: #0a0a0a;
+  --c-gradient-to: #171717;
+  --c-divider: rgba(255, 255, 255, 0.04);
+  --c-heart: #ef4444;
+
+  --c-scrollbar-track: #0a0a0a;
+  --c-scrollbar-thumb: #262626;
+  --c-scrollbar-thumb-hover: #404040;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: var(--c-scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #262626;
+  background: var(--c-scrollbar-thumb);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #404040;
+  background: var(--c-scrollbar-thumb-hover);
 }

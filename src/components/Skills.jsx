@@ -86,12 +86,12 @@ const categories = [
 
 export function Skills() {
   return (
-    <div className="bg-neutral-900 text-stone-100 py-20 px-6 md:px-10 lg:px-28" id="skills">
+    <div className="bg-[var(--c-bg-alt)] text-[var(--c-text)] py-20 px-6 md:px-10 lg:px-28" id="skills">
       <Fade triggerOnce>
-        <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-white/90">
+        <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
           🛠️ Skills
         </h2>
-        <p className="text-center text-white/40 font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
+        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
           Stack técnico con el que trabajo día a día
         </p>
       </Fade>
@@ -101,8 +101,8 @@ export function Skills() {
           const CategoryIcon = cat.icon;
           return (
             <Fade key={i} triggerOnce direction="up" delay={i * 100}>
-              <div className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl p-5">
-                <h3 className="flex items-center gap-2 text-xs font-medium text-white/40 uppercase tracking-widest mb-5 font-sans">
+              <div className="bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-5">
+                <h3 className="flex items-center gap-2 text-xs font-medium text-[var(--c-text-40)] uppercase tracking-widest mb-5 font-sans">
                   <CategoryIcon className="text-sm" />
                   {cat.title}
                 </h3>
@@ -112,9 +112,9 @@ export function Skills() {
                     return (
                       <span
                         key={skill}
-                        className="inline-flex items-center gap-1.5 text-xs text-white/50 bg-white/[0.03] border border-white/[0.06] px-3 py-1 rounded-full"
+                        className="inline-flex items-center gap-1.5 text-xs text-[var(--c-text-60)] bg-[var(--c-bg-card)] border border-[var(--c-border)] px-3 py-1 rounded-full"
                       >
-                        {Icon && <Icon className="text-xs text-white/30" />}
+                        {Icon && <Icon className="text-xs text-[var(--c-text-40)]" />}
                         {skill}
                       </span>
                     );
