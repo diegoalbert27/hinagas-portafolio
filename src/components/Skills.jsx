@@ -61,8 +61,8 @@ const categories = [
   {
     title: "Arquitectura",
     icon: HiOutlineSquares2X2,
-    skills: ["Microservicios", "Event-Driven", "DDD", "Pub/Sub"],
-    icons: [null, null, null, null],
+    skills: ["Microservicios", "Event-Driven", "DDD", "Pub/Sub", "Sistemas Distribuidos", "Diseño de Sistemas"],
+    icons: [null, null, null, null, null, null],
   },
   {
     title: "Observabilidad",
