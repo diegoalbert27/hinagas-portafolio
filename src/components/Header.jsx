@@ -6,7 +6,7 @@ import { HiLocationMarker } from "react-icons/hi";
 export function Header() {
   return (
     <div className="relative h-screen bg-gradient-to-b from-neutral-950 to-neutral-900 overflow-hidden" id="hero">
-      <div className="relative z-10 w-full h-full flex flex-col items-center justify-center text-stone-100 px-6">
+      <div className="mt-8 relative z-10 w-full h-full flex flex-col items-center justify-center text-stone-100 px-6">
         <Fade triggerOnce>
           <div className="flex justify-center mb-8">
             <img
@@ -21,11 +21,11 @@ export function Header() {
           </h1>
 
           <h2 className="mt-4 font-sans text-lg md:text-xl text-white/50 font-light tracking-wide text-center">
-            Backend Engineer · Fintech & Payments
+            Full-Stack Backend Engineer · Fintech & Crypto
           </h2>
 
           <p className="mt-6 font-sans text-white/40 text-base max-w-md text-center leading-relaxed">
-            Construyo la infraestructura backend que mueve dinero: wallets, scoring crediticio, desembolsos, integraciones bancarias.
+            Construyo productos fintech, de pagos y crypto end-to-end, desde el backend hasta experiencias web y mobile.
           </p>
 
           <div className="mt-4 flex items-center justify-center gap-1.5 text-white/30 text-sm">

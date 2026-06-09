@@ -5,6 +5,7 @@ const experiences = [
     company: "Crixto Venezuela",
     role: "Backend Developer",
     period: "2025 – Presente",
+    link: "https://play.google.com/store/apps/details?id=crixto.pay&hl=en",
     description: "Plataforma fintech enfocada en pagos con criptomonedas y productos financieros crypto-fiat.",
     bullets: [
       "Integré servicios de tarjetas crypto-fiat para transacciones punto de venta — el producto generó más de $300K en comisiones en sus primeros tres meses.",
@@ -17,6 +18,7 @@ const experiences = [
     company: "Plurall",
     role: "Backend Developer",
     period: "2023 – 2025",
+    link: "https://pidetucredito.plurall.com/",
     description: "Startup fintech enfocada en préstamos digitales y soluciones de microcrédito.",
     bullets: [
       "Co-construí un pipeline de scoring de riesgo crediticio con el equipo de Data: recolecté datos de solicitantes y negocios mediante una arquitectura orientada a eventos y automaticé la clasificación de riesgo para respaldar decisiones de préstamo.",
@@ -42,6 +44,7 @@ const experiences = [
     company: "Neo Aplicaciones",
     role: "Web Developer",
     period: "Mar 2021 – Jul 2021",
+    link: "https://neoaplicaciones.com/",
     description: "Plataforma de pagos digitales enfocada en soluciones de pago electrónico.",
     bullets: [
       "Desarrollé módulos para administración de directorios de pago y gestión de transacciones.",
@@ -59,7 +62,7 @@ export function Experience() {
           💼 Experiencia
         </h2>
         <p className="text-center text-white/40 font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
-          Más de 5 años construyendo infraestructura backend en fintech
+          Más de 4 años construyendo productos fintech en web y mobile
         </p>
       </Fade>
 
@@ -80,7 +83,14 @@ export function Experience() {
                   {exp.role}
                 </h3>
                 <p className="text-white/50 font-medium text-sm mt-0.5">
-                  {exp.company}
+                  <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-white/80 transition-colors"
+                  >
+                    {exp.company}
+                  </a>
                 </p>
                 <p className="text-white/30 text-xs mt-2 leading-relaxed">
                   {exp.description}

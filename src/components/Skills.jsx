@@ -4,6 +4,13 @@ import {
   SiTypescript,
   SiNestjs,
   SiPython,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiBootstrap,
+  SiTailwindcss,
+  SiReact,
+  SiVuedotjs,
   SiAwslambda,
   SiAmazondynamodb,
   SiDocker,
@@ -23,6 +30,7 @@ import {
   HiOutlineEye,
   HiOutlineGlobeAlt,
   HiOutlineWrenchScrewdriver,
+  HiOutlineCodeBracket,
 } from "react-icons/hi2";
 
 const categories = [
@@ -31,6 +39,12 @@ const categories = [
     icon: HiOutlineServerStack,
     skills: ["Node.js", "TypeScript", "NestJS", "Python", "REST APIs"],
     icons: [SiNodedotjs, SiTypescript, SiNestjs, SiPython, null],
+  },
+  {
+    title: "Frontend",
+    icon: HiOutlineCodeBracket,
+    skills: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "Tailwind", "React", "Vue"],
+    icons: [SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiTailwindcss, SiReact, SiVuedotjs],
   },
   {
     title: "Cloud & Infra",

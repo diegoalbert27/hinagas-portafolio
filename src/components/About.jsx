@@ -2,7 +2,7 @@ import { Fade } from "react-awesome-reveal";
 
 const education = [
   {
-    title: "Ingeniería en Computación",
+    title: "Ingeniería en Informática",
     school: "Universidad Politécnica Territorial del Estado Aragua (UPTA)",
     period: "2024",
     link: "http://upta.edu.ve/",
@@ -36,7 +36,7 @@ export function About() {
             👨‍💻 Sobre mi
           </h2>
           <p className="text-center text-white/40 font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
-            Backend Engineer con foco en fintech
+            Full-Stack Backend Engineer · Fintech & Crypto
           </p>
         </Fade>
 
@@ -44,7 +44,7 @@ export function About() {
           <Fade triggerOnce direction="up" className="md:col-span-3">
             <div className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl p-6 md:p-8">
               <p className="text-white/70 leading-relaxed">
-                Backend Engineer con más de 5 años en fintech — pagos, préstamos y crypto. Construyo la infraestructura backend que mueve dinero: wallets, pipelines de scoring crediticio, desembolsos e integraciones bancarias.
+                Backend Engineer con enfoque Full-Stack y 4+ años construyendo productos fintech, de pagos y crypto en ecosistemas web y mobile.
               </p>
               <p className="text-white/70 leading-relaxed mt-4">
                 Me desenvuelvo en sistemas distribuidos y arquitecturas orientadas a eventos, y he lanzado productos que operan a escala en producción. Me apasiona enfrentar retos técnicos complejos y ser parte de proyectos innovadores que me permitan aprender y crecer como profesional.
