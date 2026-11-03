@@ -6,7 +6,7 @@ import { BiLogoLinkedinSquare, BiLogoGithub, BiLogoGmail } from "react-icons/bi"
 import { useTheme } from "../hooks/useTheme";
 
 const links = [
-  { to: "about", label: "Sobre mi" },
+  { to: "about", label: "Sobre mí" },
   { to: "experience", label: "Experiencia" },
   { to: "skills", label: "Skills" },
 ];

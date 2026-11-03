@@ -17,7 +17,7 @@ const experiences = [
   {
     company: "Plurall",
     role: "Backend Developer",
-    period: "2023 – 2025",
+    period: "NOV 2023 – SEP 2025",
     link: "https://pidetucredito.plurall.com/",
     description: "Startup fintech enfocada en préstamos digitales y soluciones de microcrédito.",
     bullets: [
@@ -31,7 +31,7 @@ const experiences = [
   {
     company: "Design & Graphics",
     role: "Full Stack Developer",
-    period: "Ago 2021 – Nov 2023",
+    period: "JUL 2021 – AGO 2023",
     description: "Agencia de desarrollo de software entregando soluciones a medida y productos internos.",
     bullets: [
       "Construí una plataforma de nómina cubriendo salarios, vacaciones, incidencias y seguros — ciclo completo, no solo cálculos.",
@@ -43,7 +43,7 @@ const experiences = [
   {
     company: "Neo Aplicaciones",
     role: "Web Developer",
-    period: "Mar 2021 – Jul 2021",
+    period: "MAR 2021 – JUL 2021",
     link: "https://neoaplicaciones.com/",
     description: "Plataforma de pagos digitales enfocada en soluciones de pago electrónico.",
     bullets: [
@@ -62,7 +62,7 @@ export function Experience() {
           💼 Experiencia
         </h2>
         <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
-          Más de 4 años construyendo productos fintech en web y mobile
+          Más de 5 años construyendo productos fintech en web y mobile
         </p>
       </Fade>
 

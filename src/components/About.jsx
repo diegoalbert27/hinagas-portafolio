@@ -4,12 +4,21 @@ const education = [
   {
     title: "Ingeniería en Informática",
     school: "Universidad Politécnica Territorial del Estado Aragua (UPTA)",
-    period: "2024",
+    period: "2018 – 2024",
     link: "http://upta.edu.ve/",
+    thesis: {
+      label: "Proyecto de grado: Sistema de préstamo circulante para una biblioteca (PHP, MySQL, JavaScript)",
+      link: "https://github.com/diegoalbert27/bpc_v2Vani",
+    },
   },
 ];
 
 const certifications = [
+  {
+    title: "AI Fluency: Framework & Foundations",
+    issuer: "Anthropic",
+    year: "2025",
+  },
   {
     title: "Modern Software Architecture: DDD, Events & Microservices",
     issuer: "Udemy",
@@ -23,7 +32,18 @@ const certifications = [
   {
     title: "Full Stack Open – JavaScript",
     issuer: "University of Helsinki",
+    // TODO(diego): confirmar el año (2021 o 2022).
     year: "2021",
+  },
+  {
+    title: "AI Fundamentals",
+    issuer: "Google",
+    year: "2026",
+  },
+  {
+    title: "Claude Code para Programadores",
+    issuer: "Platzi",
+    year: "2026",
   },
 ];
 
@@ -33,10 +53,10 @@ export function About() {
       <div className="max-w-5xl mx-auto">
         <Fade triggerOnce>
           <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
-            👨‍💻 Sobre mi
+            👨‍💻 Sobre mí
           </h2>
           <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
-            Full-Stack Backend Engineer · Fintech & Crypto
+            Backend & Product Engineer · Fintech, Pagos y Cripto
           </p>
         </Fade>
 
@@ -44,13 +64,10 @@ export function About() {
           <Fade triggerOnce direction="up" className="md:col-span-3">
             <div className="bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-6 md:p-8">
               <p className="text-[var(--c-text-70)] leading-relaxed">
-                Backend Engineer con enfoque Full-Stack y 4+ años construyendo productos fintech, de pagos y crypto en ecosistemas web y mobile.
+                Ingeniero backend con mentalidad de producto. Diseño y opero los sistemas detrás de pagos, wallets y crédito digital, y hoy extiendo mi alcance al producto completo con React Native + Expo.
               </p>
               <p className="text-[var(--c-text-70)] leading-relaxed mt-4">
-                Me desenvuelvo en sistemas distribuidos y arquitecturas orientadas a eventos, y he lanzado productos que operan a escala en producción. Me apasiona enfrentar retos técnicos complejos y ser parte de proyectos innovadores que me permitan aprender y crecer como profesional.
-              </p>
-              <p className="text-[var(--c-text-70)] leading-relaxed mt-4">
-                Siempre en busca de colaborar con personas talentosas y aportar soluciones que generen impacto real.
+                Más de 5 años construyendo fintech con TypeScript, Node.js, NestJS y AWS, en arquitecturas orientadas a eventos. Trabajo cerca de producto y operaciones para decidir qué construir, no solo cómo.
               </p>
             </div>
           </Fade>
@@ -70,11 +87,21 @@ export function About() {
                       className="text-[var(--c-text-40)] hover:text-[var(--c-text-70)] text-xs font-sans transition-colors"
                       href={edu.link}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       {edu.school}
                     </a>
                     <p className="text-[var(--c-text-20)] text-xs mt-1 tracking-wide">{edu.period}</p>
+                    {edu.thesis && (
+                      <a
+                        className="block text-[var(--c-text-40)] hover:text-[var(--c-text-70)] text-xs font-sans leading-snug mt-2 transition-colors"
+                        href={edu.thesis.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {edu.thesis.label}
+                      </a>
+                    )}
                   </div>
                 ))}
               </div>
