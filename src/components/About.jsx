@@ -13,40 +13,6 @@ const education = [
   },
 ];
 
-const certifications = [
-  {
-    title: "AI Fluency: Framework & Foundations",
-    issuer: "Anthropic",
-    year: "2025",
-  },
-  {
-    title: "Modern Software Architecture: DDD, Events & Microservices",
-    issuer: "Udemy",
-    year: "2024",
-  },
-  {
-    title: "TypeScript: Complete Guide",
-    issuer: "Udemy",
-    year: "2025",
-  },
-  {
-    title: "Full Stack Open – JavaScript",
-    issuer: "University of Helsinki",
-    // TODO(diego): confirmar el año (2021 o 2022).
-    year: "2021",
-  },
-  {
-    title: "AI Fundamentals",
-    issuer: "Google",
-    year: "2026",
-  },
-  {
-    title: "Claude Code para Programadores",
-    issuer: "Platzi",
-    year: "2026",
-  },
-];
-
 export function About() {
   return (
     <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-20 px-6 md:px-10 lg:px-28" id="about">
@@ -104,26 +70,6 @@ export function About() {
                     )}
                   </div>
                 ))}
-              </div>
-            </Fade>
-
-            <Fade triggerOnce direction="up" delay={200}>
-              <div className="bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-5">
-                <h3 className="text-xs font-medium text-[var(--c-text-40)] uppercase tracking-widest mb-4 font-sans">
-                  Certificaciones
-                </h3>
-                <div className="space-y-3">
-                  {certifications.map((cert, i) => (
-                    <div key={i} className="border-l border-[var(--c-border)] pl-3">
-                      <h4 className="text-sm font-medium text-[var(--c-text-70)] font-sans leading-snug">
-                        {cert.title}
-                      </h4>
-                      <p className="text-xs text-[var(--c-text-40)] mt-0.5 tracking-wide">
-                        {cert.issuer} · {cert.year}
-                      </p>
-                    </div>
-                  ))}
-                </div>
               </div>
             </Fade>
           </div>
