@@ -10,6 +10,7 @@ import {
   SiBootstrap,
   SiTailwindcss,
   SiReact,
+  SiExpo,
   SiVuedotjs,
   SiAwslambda,
   SiAmazondynamodb,
@@ -37,14 +38,15 @@ const categories = [
   {
     title: "Backend",
     icon: HiOutlineServerStack,
+    // TODO(diego): confirmar si Python se mantiene en skills (no aparece en la experiencia).
     skills: ["Node.js", "TypeScript", "NestJS", "Python", "REST APIs"],
     icons: [SiNodedotjs, SiTypescript, SiNestjs, SiPython, null],
   },
   {
     title: "Frontend",
     icon: HiOutlineCodeBracket,
-    skills: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "Tailwind", "React", "Vue"],
-    icons: [SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiTailwindcss, SiReact, SiVuedotjs],
+    skills: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "Tailwind", "React", "React Native", "Expo", "Vue"],
+    icons: [SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiTailwindcss, SiReact, SiReact, SiExpo, SiVuedotjs],
   },
   {
     title: "Cloud & Infra",

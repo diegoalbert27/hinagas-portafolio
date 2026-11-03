@@ -21,11 +21,11 @@ export function Header() {
           </h1>
 
           <h2 className="mt-4 font-sans text-lg md:text-xl text-[var(--c-text-60)] font-light tracking-wide text-center">
-            Full-Stack Backend Engineer · Fintech & Crypto
+            Backend & Product Engineer · Fintech, Pagos y Cripto
           </h2>
 
           <p className="mt-6 font-sans text-[var(--c-text-40)] text-base max-w-md text-center leading-relaxed">
-            Construyo productos fintech, de pagos y crypto end-to-end, desde el backend hasta experiencias web y mobile.
+            Construyo los sistemas detrás de pagos, wallets y crédito digital, de la API a la pantalla del usuario.
           </p>
 
           <div className="mt-4 flex items-center justify-center gap-1.5 text-[var(--c-text-40)] text-sm">
@@ -37,7 +37,8 @@ export function Header() {
             <a
               href="https://www.linkedin.com/in/diego-hinagas/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de Diego Hinagas"
               className="text-[var(--c-text-40)] hover:text-[var(--c-text-80)] transition-colors duration-500"
             >
               <BiLogoLinkedinSquare className="text-3xl" />
@@ -45,13 +46,15 @@ export function Header() {
             <a
               href="https://github.com/diegoalbert27"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label="GitHub de Diego Hinagas"
               className="text-[var(--c-text-40)] hover:text-[var(--c-text-80)] transition-colors duration-500"
             >
               <BiLogoGithub className="text-3xl" />
             </a>
             <a
               href="mailto:hinagasrodriguez@gmail.com"
+              aria-label="Enviar correo a Diego Hinagas"
               className="text-[var(--c-text-40)] hover:text-[var(--c-text-80)] transition-colors duration-500"
             >
               <BiLogoGmail className="text-3xl" />
