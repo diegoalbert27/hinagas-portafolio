@@ -88,9 +88,9 @@ const categories = [
 
 export function Skills() {
   return (
-    <div className="bg-[var(--c-bg-alt)] text-[var(--c-text)] py-12 px-6 md:px-10 lg:px-28" id="skills">
+    <div className="bg-[var(--c-bg-alt)] text-[var(--c-text)] py-12 px-4 sm:px-6 md:px-10 lg:px-28" id="skills">
       <Fade triggerOnce>
-        <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
+        <h2 className="text-center font-sans text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
           🛠️ Skills
         </h2>
         <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-10 tracking-wide">
@@ -98,13 +98,13 @@ export function Skills() {
         </p>
       </Fade>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-5 max-w-6xl mx-auto">
         {categories.map((cat, i) => {
           const CategoryIcon = cat.icon;
           return (
             <Fade key={i} triggerOnce direction="up" delay={i * 100}>
-              <div className="bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-5">
-                <h3 className="flex items-center gap-2 text-xs font-medium text-[var(--c-text-40)] uppercase tracking-widest mb-5 font-sans">
+              <div className="bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-4 sm:p-5">
+                <h3 className="flex items-center gap-2 text-xs font-medium text-[var(--c-text-40)] uppercase tracking-widest mb-3 sm:mb-5 font-sans">
                   <CategoryIcon className="text-sm" />
                   {cat.title}
                 </h3>

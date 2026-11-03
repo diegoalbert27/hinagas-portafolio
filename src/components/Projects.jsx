@@ -93,9 +93,27 @@ function renderChips(items) {
   );
 }
 
+function renderStage(images, className) {
+  return (
+    <div
+      className={`relative w-full max-w-xs sm:max-w-sm lg:max-w-none mx-auto aspect-[1/1.05] rounded-2xl bg-[radial-gradient(circle_at_50%_45%,rgba(139,223,66,0.18),transparent_65%)] ${className}`}
+    >
+      {images.map((img, i) => (
+        <img
+          key={img.src}
+          src={img.src}
+          alt={img.alt}
+          loading="lazy"
+          className={`absolute h-auto rounded-[1.1rem] border-2 border-white/10 shadow-2xl shadow-black/40 transition-transform duration-500 ${phoneStyles[i]}`}
+        />
+      ))}
+    </div>
+  );
+}
+
 function renderFeatured(project) {
   return (
-    <div className="group grid lg:grid-cols-[minmax(0,1fr)_25rem] gap-8 lg:gap-12 items-center bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-6 md:p-10">
+    <div className="group grid lg:grid-cols-[minmax(0,1fr)_25rem] gap-8 lg:gap-12 items-center bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-5 sm:p-6 md:p-10">
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-2 mb-4">
           {project.badges.map((b, i) => (
@@ -117,6 +135,8 @@ function renderFeatured(project) {
         </h3>
         <p className="mt-1 text-base text-[var(--c-text-60)] font-sans">{project.tagline}</p>
         <p className="mt-3 text-xs text-[var(--c-text-40)] leading-relaxed">{project.note}</p>
+
+        {renderStage(project.images, "lg:hidden mt-6")}
 
         <div className="mt-6 space-y-5">
           {project.details.map((d) =>
@@ -168,24 +188,14 @@ function renderFeatured(project) {
         </div>
       </div>
 
-      <div className="relative w-full max-w-sm lg:max-w-none mx-auto aspect-[1/1.05] rounded-2xl bg-[radial-gradient(circle_at_50%_45%,rgba(139,223,66,0.18),transparent_65%)]">
-        {project.images.map((img, i) => (
-          <img
-            key={img.src}
-            src={img.src}
-            alt={img.alt}
-            loading="lazy"
-            className={`absolute h-auto rounded-[1.1rem] border-2 border-white/10 shadow-2xl shadow-black/40 transition-transform duration-500 ${phoneStyles[i]}`}
-          />
-        ))}
-      </div>
+      {renderStage(project.images, "hidden lg:block")}
     </div>
   );
 }
 
 function renderCard(project) {
   return (
-    <div className="h-full flex flex-col bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-6 md:p-8">
+    <div className="h-full flex flex-col bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-5 md:p-8">
       <h3 className="text-xl font-semibold text-[var(--c-text-h)] font-sans">{project.title}</h3>
 
       {project.description && (
@@ -229,9 +239,9 @@ export function Projects() {
   const visibleProjects = projects.filter((p) => p.visible);
 
   return (
-    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-12 px-6 md:px-10 lg:px-28" id="proyectos">
+    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-12 px-4 sm:px-6 md:px-10 lg:px-28" id="proyectos">
       <Fade triggerOnce>
-        <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
+        <h2 className="text-center font-sans text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
           🚀 Proyectos
         </h2>
         <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-10 tracking-wide">

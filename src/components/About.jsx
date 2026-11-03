@@ -2,10 +2,10 @@ import { Fade } from "react-awesome-reveal";
 
 export function About() {
   return (
-    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-12 px-6 md:px-10 lg:px-28" id="about">
+    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-12 px-4 sm:px-6 md:px-10 lg:px-28" id="about">
       <div className="max-w-5xl mx-auto">
         <Fade triggerOnce>
-          <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
+          <h2 className="text-center font-sans text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
             👨‍💻 Sobre mí
           </h2>
           <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-10 tracking-wide">
