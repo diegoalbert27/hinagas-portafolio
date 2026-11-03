@@ -62,25 +62,25 @@ const experiences = [
 
 export function Experience() {
   return (
-    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-8 px-6 md:px-10 lg:px-28" id="experience">
+    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-12 px-4 sm:px-6 md:px-10 lg:px-28" id="experience">
       <Fade triggerOnce>
-        <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
+        <h2 className="text-center font-sans text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
           💼 Experiencia
         </h2>
-        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
+        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-10 tracking-wide">
           Más de 5 años construyendo productos fintech en web y mobile
         </p>
       </Fade>
 
       <div className="relative max-w-3xl mx-auto">
-        <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-[var(--c-timeline-line)]" />
+        <div className="absolute left-[5px] md:left-6 top-0 bottom-0 w-px bg-[var(--c-timeline-line)]" />
 
         {experiences.map((exp, i) => (
-          <Fade key={i} triggerOnce direction="up" delay={i * 200} className="pb-16 last:pb-0">
-            <div className="relative pl-12 md:pl-16">
-              <div className="absolute left-[13px] md:left-[21px] top-2 w-1.5 h-1.5 rounded-full bg-[var(--c-timeline-dot)] ring-4 ring-[var(--c-timeline-ring)]" />
+          <Fade key={i} triggerOnce direction="up" delay={i * 200} className="pb-10 last:pb-0">
+            <div className="relative pl-7 md:pl-16">
+              <div className="absolute left-[2px] md:left-[21px] top-2 w-1.5 h-1.5 rounded-full bg-[var(--c-timeline-dot)] ring-4 ring-[var(--c-timeline-ring)]" />
 
-              <div className="bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-6 md:p-8">
+              <div className="bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-5 md:p-8">
                 <span className="block text-xs text-[var(--c-text-20)] tracking-widest uppercase">
                   {exp.period}
                 </span>
