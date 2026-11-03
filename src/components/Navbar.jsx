@@ -13,7 +13,7 @@ const links = [
   { to: "about", label: "Sobre mí" },
   { to: "experience", label: "Experiencia" },
   { to: "proyectos", label: "Proyectos" },
-  { to: "certificaciones", label: "Certificaciones" },
+  { to: "educacion", label: "Formación" },
   { to: "skills", label: "Skills" },
 ];
 
