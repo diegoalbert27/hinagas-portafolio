@@ -2,53 +2,59 @@ import { Fade } from "react-awesome-reveal";
 
 const experiences = [
   {
-    company: "Fintech crypto-fiat (cliente confidencial)",
-    role: "Backend Engineer · Contrato",
-    // TODO(diego): confirmar fecha de inicio (2024 o 2025, con mes) y usar formato "MES AÑO – PRESENTE".
-    period: "2025 – Presente",
+    company: "Fintech crypto-fiat",
+    role: "Ingeniero de Software",
+    period: "SEP 2025 – PRESENTE",
+    location: "Remoto",
     description: "Plataforma fintech enfocada en pagos con criptomonedas y productos financieros crypto-fiat.",
     bullets: [
-      "Integré servicios de tarjetas crypto-fiat para transacciones punto de venta — el producto generó más de $300K en comisiones en sus primeros tres meses.",
-      "Construí un módulo de gestión de dispositivos que reforzó la seguridad de cuentas y optimizó los flujos de autenticación.",
-      "Mantuve servicios de API de wallets y gestioné respuesta a incidentes en sistemas críticos en producción.",
+      "Desarrollé un módulo de gestión de dispositivos que reforzó la seguridad de las cuentas y agilizó la autenticación.",
+      "Integré servicios de tarjetas crypto-fiat para pagos en punto de venta, en conjunto con producto y operaciones.",
+      "Soy responsable de la confiabilidad de servicios financieros críticos: monitoreo, análisis y resolución de incidentes.",
     ],
     tech: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "Redis", "PM2", "Microservicios"],
   },
   {
-    company: "Plurall",
-    role: "Backend Developer",
+    company: "Elitgon - Plurall",
+    role: "Desarrollador Backend",
     period: "NOV 2023 – SEP 2025",
+    location: "Bogotá, Colombia · Remoto",
     link: "https://pidetucredito.plurall.com/",
     description: "Startup fintech enfocada en préstamos digitales y soluciones de microcrédito.",
     bullets: [
-      "Co-construí un pipeline de scoring de riesgo crediticio con el equipo de Data: recolecté datos de solicitantes y negocios mediante una arquitectura orientada a eventos y automaticé la clasificación de riesgo para respaldar decisiones de préstamo.",
-      "Diseñé pipelines pub/sub para distribuir datos financieros estructurados entre análisis de riesgo y operaciones.",
-      "Construí una integración con HubSpot que sincronizaba automáticamente datos de solicitantes durante el onboarding — redujo el trabajo manual y dio mejor visibilidad al equipo de operaciones.",
-      "Manejé monitoreo en producción con Grafana y CloudWatch; lideré investigaciones de incidentes cuando algo fallaba.",
+      "Construí procesos de generación y distribución de información financiera con modelos pub/sub sobre AWS (EventBridge, Lambda).",
+      "Integré HubSpot CRM para automatizar el onboarding y el seguimiento de clientes.",
+      "Desarrollé y mantuve servicios de cobranzas, desembolsos y operaciones financieras.",
+      "Monitoreé producción con Grafana y AWS CloudWatch, e investigué y resolví incidentes.",
     ],
-    tech: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "AWS Lambda", "DynamoDB", "S3", "EventBridge", "Docker", "Serverless"],
+    tech: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "AWS Lambda", "DynamoDB", "S3", "EventBridge", "Docker", "Serverless Framework"],
   },
   {
-    company: "Design & Graphics",
-    role: "Full Stack Developer",
+    company: "DevelopersandGraphics",
+    role: "Desarrollador Full Stack",
     period: "JUL 2021 – AGO 2023",
+    location: "Maracay, Venezuela · Presencial",
     description: "Agencia de desarrollo de software entregando soluciones a medida y productos internos.",
     bullets: [
-      "Construí una plataforma de nómina cubriendo salarios, vacaciones, incidencias y seguros — ciclo completo, no solo cálculos.",
-      "Desarrollé un plugin de PrestaShop para pagos con crypto mediante QR codes y webhooks.",
-      "Construí el backend para una app móvil de gestión de instalaciones de paneles solares: programación, órdenes de trabajo, onboarding de clientes y seguimiento energético.",
+      "Plataforma de gestión de nómina y sistema de inventario y ventas.",
+      "Plugin de PrestaShop que habilitó pagos con criptomonedas mediante QR, wallets y webhooks.",
+      "Backend de una app móvil para la gestión de instalaciones solares.",
+      "Herramienta de automatización y sincronización de cargas masivas de datos con .NET y C#.",
+      "APIs REST con Laravel y frontends con Inertia (React y Vue); apps full stack con stack MEVN.",
     ],
-    tech: ["PHP", "Laravel", "WordPress", "Node.js", "JavaScript", "MySQL", "Swift", "Git"],
+    tech: ["PHP", "Laravel", "Node.js", "JavaScript", "Vue", "React", "MySQL", ".NET / C#"],
   },
   {
     company: "Neo Aplicaciones",
-    role: "Web Developer",
+    role: "Desarrollador Web",
     period: "MAR 2021 – JUL 2021",
+    location: "Maracay, Venezuela · Presencial",
     link: "https://neoaplicaciones.com/",
     description: "Plataforma de pagos digitales enfocada en soluciones de pago electrónico.",
     bullets: [
-      "Desarrollé módulos para administración de directorios de pago y gestión de transacciones.",
-      "Construí funcionalidad de transferencia entre directorios de pago y componentes UI para flujos de pago.",
+      "Desarrollé módulos de administración de directorios de pago.",
+      "Implementé transferencias entre usuarios, en frontend y backend.",
+      "Trabajé con PHP, JavaScript y MySQL, incluyendo pruebas e2e.",
     ],
     tech: ["PHP", "HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "MySQL"],
   },
@@ -75,9 +81,10 @@ export function Experience() {
               <div className="absolute left-[13px] md:left-[21px] top-2 w-1.5 h-1.5 rounded-full bg-[var(--c-timeline-dot)] ring-4 ring-[var(--c-timeline-ring)]" />
 
               <div className="bg-[var(--c-bg-card)] backdrop-blur-xl border border-[var(--c-border)] rounded-2xl p-6 md:p-8">
-                <span className="inline-block text-xs text-[var(--c-text-20)] tracking-widest uppercase mb-3">
+                <span className="block text-xs text-[var(--c-text-20)] tracking-widest uppercase">
                   {exp.period}
                 </span>
+                <p className="text-xs text-[var(--c-text-20)] mt-1 mb-3">{exp.location}</p>
 
                 <h3 className="text-xl font-semibold text-[var(--c-text-h)] font-sans">
                   {exp.role}
