@@ -5,6 +5,10 @@ import { HiMenuAlt3, HiX, HiSun, HiMoon } from "react-icons/hi";
 import { BiLogoLinkedinSquare, BiLogoGithub, BiLogoGmail } from "react-icons/bi";
 import { useTheme } from "../hooks/useTheme";
 
+// TODO(diego): colocar el PDF en public/cv/Diego_Hinagas_CV.pdf y poner SHOW_CV_BUTTON = true.
+const SHOW_CV_BUTTON = false;
+const CV_URL = "/cv/Diego_Hinagas_CV.pdf";
+
 const links = [
   { to: "about", label: "Sobre mí" },
   { to: "experience", label: "Experiencia" },
@@ -52,6 +56,7 @@ export function Navbar() {
                       className="cursor-pointer hover:text-[var(--c-text-h)] transition-colors px-3 py-2 rounded-lg hover:bg-[var(--c-bg-card)]"
                       activeClass="text-[var(--c-text-h)]"
                       to={l.to}
+                      href={`#${l.to}`}
                       spy={true}
                       smooth={true}
                       offset={50}
@@ -72,6 +77,15 @@ export function Navbar() {
                     <HiMoon className="text-xl" />
                   )}
                 </button>
+                {SHOW_CV_BUTTON && (
+                  <a
+                    href={CV_URL}
+                    download
+                    className="text-xs font-medium font-sans border border-[var(--c-border)] text-[var(--c-text-80)] hover:bg-[var(--c-bg-card)] px-4 py-2 rounded-full mr-2 transition-colors"
+                  >
+                    Descargar CV
+                  </a>
+                )}
                 <a
                   href="mailto:hinagasrodriguez@gmail.com"
                   className="text-xs font-medium font-sans bg-[var(--c-bg-btn)] text-[var(--c-text-btn)] hover:bg-[var(--c-bg-btn-hover)] px-4 py-2 rounded-full transition-colors"
@@ -124,6 +138,7 @@ export function Navbar() {
               className="cursor-pointer text-[var(--c-text-60)] hover:text-[var(--c-text-h)] font-sans font-medium text-lg transition-colors px-4 py-3 rounded-xl hover:bg-[var(--c-bg-card)]"
               activeClass="text-[var(--c-text-h)] bg-[var(--c-bg-card)]"
               to={l.to}
+              href={`#${l.to}`}
               spy={true}
               smooth={true}
               offset={50}
@@ -142,6 +157,16 @@ export function Navbar() {
             >
               Contacto
             </a>
+            {SHOW_CV_BUTTON && (
+              <a
+                href={CV_URL}
+                download
+                className="block text-center text-sm font-medium font-sans border border-[var(--c-border)] text-[var(--c-text-80)] hover:bg-[var(--c-bg-card)] px-4 py-3 rounded-full mt-3 transition-colors"
+                onClick={closeMenu}
+              >
+                Descargar CV
+              </a>
+            )}
           </div>
 
           <div className="pt-4 flex justify-center">
@@ -168,7 +193,8 @@ export function Navbar() {
               <a
                 href="https://www.linkedin.com/in/diego-hinagas/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn de Diego Hinagas"
                 className="text-[var(--c-text-40)] hover:text-[var(--c-text-70)] transition-colors"
               >
                 <BiLogoLinkedinSquare className="text-2xl" />
@@ -176,13 +202,15 @@ export function Navbar() {
               <a
                 href="https://github.com/diegoalbert27"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="GitHub de Diego Hinagas"
                 className="text-[var(--c-text-40)] hover:text-[var(--c-text-70)] transition-colors"
               >
                 <BiLogoGithub className="text-2xl" />
               </a>
               <a
                 href="mailto:hinagasrodriguez@gmail.com"
+                aria-label="Enviar correo a Diego Hinagas"
                 className="text-[var(--c-text-40)] hover:text-[var(--c-text-70)] transition-colors"
               >
                 <BiLogoGmail className="text-2xl" />
