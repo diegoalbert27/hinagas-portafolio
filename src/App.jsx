@@ -16,7 +16,7 @@ export default function App() {
       <Experience />
       <Projects />
       <Education />
-      <div className="relative py-8 bg-[var(--c-bg)]">
+      <div className="relative py-3 bg-[var(--c-bg)]">
         <div className="absolute inset-x-0 top-1/2 h-px bg-gradient-to-r from-transparent via-[var(--c-divider)] to-transparent" />
       </div>
       <Skills />

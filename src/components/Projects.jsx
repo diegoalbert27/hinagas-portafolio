@@ -229,12 +229,12 @@ export function Projects() {
   const visibleProjects = projects.filter((p) => p.visible);
 
   return (
-    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-20 px-6 md:px-10 lg:px-28" id="proyectos">
+    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-12 px-6 md:px-10 lg:px-28" id="proyectos">
       <Fade triggerOnce>
         <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
           🚀 Proyectos
         </h2>
-        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
+        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-10 tracking-wide">
           Decisiones de producto y de ingeniería detrás de lo que construyo
         </p>
       </Fade>

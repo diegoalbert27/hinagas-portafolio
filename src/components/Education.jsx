@@ -70,12 +70,12 @@ const certifications = [
 
 export function Education() {
   return (
-    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-20 px-6 md:px-10 lg:px-28" id="educacion">
+    <div className="bg-[var(--c-bg)] text-[var(--c-text)] py-12 px-6 md:px-10 lg:px-28" id="educacion">
       <Fade triggerOnce>
         <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
           🎓 Educación y Certificaciones
         </h2>
-        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
+        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-10 tracking-wide">
           Formación universitaria y aprendizaje continuo en ingeniería de software, TypeScript e IA aplicada
         </p>
       </Fade>
@@ -122,7 +122,7 @@ export function Education() {
       </Fade>
 
       <Fade triggerOnce>
-        <h3 className="text-center text-xs font-medium text-[var(--c-text-40)] uppercase tracking-widest font-sans mt-14 mb-6">
+        <h3 className="text-center text-xs font-medium text-[var(--c-text-40)] uppercase tracking-widest font-sans mt-10 mb-6">
           Certificaciones
         </h3>
       </Fade>

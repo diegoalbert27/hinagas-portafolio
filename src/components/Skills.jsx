@@ -88,12 +88,12 @@ const categories = [
 
 export function Skills() {
   return (
-    <div className="bg-[var(--c-bg-alt)] text-[var(--c-text)] py-20 px-6 md:px-10 lg:px-28" id="skills">
+    <div className="bg-[var(--c-bg-alt)] text-[var(--c-text)] py-12 px-6 md:px-10 lg:px-28" id="skills">
       <Fade triggerOnce>
         <h2 className="text-center font-sans text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-[var(--c-text-h)]">
           🛠️ Skills
         </h2>
-        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-16 tracking-wide">
+        <p className="text-center text-[var(--c-text-40)] font-sans text-sm max-w-xl mx-auto mb-10 tracking-wide">
           Stack técnico con el que trabajo día a día
         </p>
       </Fade>
