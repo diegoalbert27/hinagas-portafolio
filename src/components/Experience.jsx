@@ -2,10 +2,10 @@ import { Fade } from "react-awesome-reveal";
 
 const experiences = [
   {
-    company: "Crixto Venezuela",
-    role: "Backend Developer",
+    company: "Fintech crypto-fiat (cliente confidencial)",
+    role: "Backend Engineer · Contrato",
+    // TODO(diego): confirmar fecha de inicio (2024 o 2025, con mes) y usar formato "MES AÑO – PRESENTE".
     period: "2025 – Presente",
-    link: "https://play.google.com/store/apps/details?id=crixto.pay&hl=en",
     description: "Plataforma fintech enfocada en pagos con criptomonedas y productos financieros crypto-fiat.",
     bullets: [
       "Integré servicios de tarjetas crypto-fiat para transacciones punto de venta — el producto generó más de $300K en comisiones en sus primeros tres meses.",
@@ -83,14 +83,18 @@ export function Experience() {
                   {exp.role}
                 </h3>
                 <p className="text-[var(--c-text-60)] font-medium text-sm mt-0.5">
-                  <a
-                    href={exp.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-[var(--c-text-80)] transition-colors"
-                  >
-                    {exp.company}
-                  </a>
+                  {exp.link ? (
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[var(--c-text-80)] transition-colors"
+                    >
+                      {exp.company}
+                    </a>
+                  ) : (
+                    exp.company
+                  )}
                 </p>
                 <p className="text-[var(--c-text-40)] text-xs mt-2 leading-relaxed">
                   {exp.description}
